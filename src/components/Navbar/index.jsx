@@ -55,7 +55,7 @@ const Navbar = () => {
               to='/sign-in'
               className={({ isActive }) => isActive ? activeStyle : undefined}
               onClick={() => handleSignOut()}>
-              Sign out
+              Sign out 
             </NavLink>
           </li>
         </>
@@ -134,37 +134,6 @@ const Navbar = () => {
       </ul>
       <ul className='flex items-center gap-3'>
         {renderView()}
-        {/* <li className='text-black/60'>
-          alvarodaza48@gmail.com
-        </li>
-        <li>
-          <NavLink
-            to='/my-orders'
-            className={({ isActive }) =>
-              isActive ? activeStyle : undefined
-            }>
-            My Orders
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            to='/my-account'
-            className={({ isActive }) =>
-              isActive ? activeStyle : undefined
-            }>
-            My Account
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            to='/sing-in'
-            className={({ isActive }) =>
-              isActive ? activeStyle : undefined
-            }
-            onClick={() => handleSignOut()}>
-            Sign out 
-          </NavLink>
-        </li> */}
         <li className='flex items-center'>
           <ShoppingBagIcon className='h-6 w-6 text-black'></ShoppingBagIcon>
           <div>{context.cartProducts.length}</div>
